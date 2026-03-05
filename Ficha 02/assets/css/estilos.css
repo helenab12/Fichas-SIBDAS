@@ -43,7 +43,7 @@
 
 .container-navegacao a {
  font-size: 1.5em; /* Aumenta o tamanho da fonte dos links */
- margin: 0px 50px; /* Espaçamento horizontal entre os links */
+ margin: 0px 20px; /* Espaçamento horizontal entre os links */
  text-decoration: none; /* Remove o sublinhado */
  color: #dddddd; /* Define a cor dos links */
 }
@@ -98,3 +98,15 @@ container-navegacao a:hover {
  font-size: 1rem; /* Tamanho padrão do texto */
  color: #d6d6d6; /* Cor do texto em cinza claro */
 } 
+
+img { /* Garante que as imagens não ultrapassem a largura do contêiner */
+ width: 100px;
+ height: 100px; /* Mantém a proporção da imagem */
+ border-radius: 5px; 
+}
+
+img:hover { /* Efeito ao passar o mouse sobre as imagens */
+ transform: scale(1.1); /* Aumenta a imagem em 10% */
+ transition: transform 0.3s; 
+ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.30);
+ }
