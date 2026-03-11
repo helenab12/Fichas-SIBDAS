@@ -31,7 +31,7 @@
 }
 .container-navegacao a {
     font-size: 1.5em; /* Aumenta o tamanho da fonte dos links */
-    margin: 0px 50px; /* Adiciona espaçamento horizontal entre os links */
+    margin: 0px 20px; /* Adiciona espaçamento horizontal entre os links */
     text-decoration: none; /* Remove o sublinhado */
     color: #dddddd; /* Define a cor dos links */
 }
