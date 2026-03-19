@@ -10,7 +10,7 @@
   <!-- folha de estilos CSS -->
   <link rel="stylesheet" href="../../assets/css/admin.css" />
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,700;1,400&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
   <link rel="stylesheet" href="../../assets/fontawesome/all.min.css">
 </head>
 
@@ -43,10 +43,29 @@
   <!-- Conteúdo Principal -->
   <main class="content">
     <section>
-      <h2>Produtos e Serviços</h2>
-      <p>Gerencie os produtos e serviços disponíveis para os clientes.</p>
+      <h2>Avaliação de Condições de Saúde</h2>
+      <p>Utilize este formulário para selecionar as condições de saúde relevantes do
+        cliente. As informações escolhidas irão gerar uma recomendação personalizada para o
+        plano de treino.</p>
     </section>
   </main>
+  <div class="form-wrapper">
+    <h2><strong><i class="fa-solid fa-dumbbell"></i> Avaliação de Condições de Saúde</strong></h2>
+    <hr>
+    <form oninput="avaliarCondicoes()">
+      <div>
+        <input type="checkbox" id="temProblemasCostas" name="condicao">
+        <label>Problemas de costas</label><br>
+        <label><input type="checkbox" id="estaGravida" name="condicao"> Grávida</label><br>
+        <label><input type="checkbox" id="temDiabetes" name="condicao"> Diabético/a</label>
+      </div>
+      <div class="form-group">
+        <label>Recomendação:</label>
+        <div id="mensagem" class="alert text-center"></div>
+      </div>
+    </form>
+  </div>
+  <script src="../../includes/js/funcoes.js"></script> 
 </body>
 
 </html>
